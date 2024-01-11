@@ -48,7 +48,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/228/sdk/8.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/233/sdk/8.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using System;
 
-public class SetNavigationTarget : MonoBehaviour {
+public class SetNavigationTarget2 : MonoBehaviour {
     [SerializeField]
     private TMP_Dropdown navigationTargetDropDown;
     [SerializeField]
@@ -39,8 +39,8 @@ public class SetNavigationTarget : MonoBehaviour {
         string selectedText = navigationTargetDropDown.options[selectedValue].text;
         try {
             int value = Int32.Parse(selectedText);
-            if (value >= 200) {
-                Debug.Log("Перейдите на 2 этаж по лестнице");
+            if (value >= 300) {
+                Debug.Log("Перейдите на 3 этаж по лестнице");
             }
         } catch (FormatException) {
         }
