@@ -16,7 +16,7 @@ public class SetNavigationTarget2 : MonoBehaviour {
     private LineRenderer line;
     private Vector3 targetPosition = Vector3.zero;
 
-    private bool lineToggle = false;
+    private bool lineToggle = true;
 
     private Scenes scene = new Scenes();
 
@@ -57,8 +57,11 @@ public class SetNavigationTarget2 : MonoBehaviour {
         }
     }
 
-    public void ToogleVisiblity() {
-        lineToggle = !lineToggle;
-        line.enabled = lineToggle;
+    public void Map() {
+        scene.OpenMap2();
+    }
+
+    public void Back() {
+        scene.OpenFloor2();
     }
 }

@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Floor2.unity
     guid: 26e08618c638e030cb2ee109ddee85b6
+  - enabled: 1
+    path: Assets/Scenes/Map1.unity
+    guid: 9f932d7ea83071d7d88784a1b560dd75
+  - enabled: 1
+    path: Assets/Scenes/Map2.unity
+    guid: a76937d34cdafd5ef93c9751e7e973bf
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f48715a624f60abe6aeafb7686426fe6, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 036b2b9b065f22126b966f9787126c25, type: 2}
