@@ -52,8 +52,17 @@ public class SetNavigationTarget : MonoBehaviour {
 
     public void Floor(int selectedValue) {
         string selectedText = SelectFloor.options[selectedValue].text;
+        if (selectedText == "Floor1") {
+            scene.OpenFloor1();
+        }
         if (selectedText == "Floor2") {
             scene.OpenFloor2();
+        }
+        if (selectedText == "Floor3") {
+            scene.OpenFloor3();
+        }
+        if (selectedText == "Floor4") {
+            scene.OpenFloor4();
         }
     }
 

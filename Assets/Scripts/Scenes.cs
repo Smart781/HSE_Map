@@ -12,6 +12,14 @@ public class Scenes : MonoBehaviour
     {
         SceneManager.LoadScene("Floor2");
     }
+    public void OpenFloor3()
+    {
+        SceneManager.LoadScene("Floor3");
+    }
+    public void OpenFloor4()
+    {
+        SceneManager.LoadScene("Floor4");
+    }
 
     public void OpenMap1()
     {
@@ -21,6 +29,15 @@ public class Scenes : MonoBehaviour
     public void OpenMap2()
     {
         SceneManager.LoadScene("Map2");
+    }
+
+    public void OpenMap3()
+    {
+        SceneManager.LoadScene("Map3");
+    }
+    public void OpenMap4()
+    {
+        SceneManager.LoadScene("Map4");
     }
 
 }

@@ -57,7 +57,9 @@
     <Compile Include="Assets/Scripts/SetNavigationTarget2.cs" />
     <Compile Include="Assets/Scripts/Target.cs" />
     <Compile Include="Assets/Scripts/Scenes.cs" />
+    <Compile Include="Assets/Scripts/SetNavigationTarget3.cs" />
     <Compile Include="Assets/Scripts/NewBehaviourScript.cs" />
+    <Compile Include="Assets/Scripts/SetNavigationTarget4.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
