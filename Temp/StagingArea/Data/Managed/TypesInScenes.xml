@@ -1,6 +1,6 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
-		<type fullname="NewBehaviourScript" preserve="nothing"/>
+		<type fullname="QrCodeRecenter" preserve="nothing"/>
 		<type fullname="SetNavigationTarget" preserve="nothing"/>
 		<type fullname="SetNavigationTarget2" preserve="nothing"/>
 		<type fullname="SetNavigationTarget3" preserve="nothing"/>

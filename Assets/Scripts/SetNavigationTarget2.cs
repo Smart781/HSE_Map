@@ -19,11 +19,22 @@ public class SetNavigationTarget2 : MonoBehaviour {
     private bool lineToggle = true;
 
     private Scenes scene = new Scenes();
+    private GameObject indicator;
 
     private void Start() {
         path = new NavMeshPath();
         line = transform.GetComponent<LineRenderer>();
-        line.enabled = lineToggle;   
+        line.enabled = lineToggle;
+        indicator = GameObject.Find("Indicator");
+
+        if (indicator != null)
+        {
+            DontDestroyOnLoad(indicator);
+        }
+        else
+        {
+            Debug.LogError("Объект indicator не найден");
+        }   
     }
 
     private void Update() {
@@ -52,6 +63,9 @@ public class SetNavigationTarget2 : MonoBehaviour {
 
     public void Floor(int selectedValue) {
         string selectedText = SelectFloor.options[selectedValue].text;
+        if (selectedText != "Floor2") {
+            Destroy(indicator);
+        }
         if (selectedText == "Floor1") {
             scene.OpenFloor1();
         }

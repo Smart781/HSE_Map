@@ -112,7 +112,7 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "NewBehaviourScript",
+            "fullManagedTypeName": "QrCodeRecenter",
             "moduleName": "",
             "usedInScenes": []
         },
