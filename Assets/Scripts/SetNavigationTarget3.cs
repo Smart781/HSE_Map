@@ -19,22 +19,18 @@ public class SetNavigationTarget3 : MonoBehaviour {
     private bool lineToggle = true;
 
     private Scenes scene = new Scenes();
-    private GameObject indicator;
+    public Camera topCamera;
+    public Camera arCamera;
+
+    private bool isArActive = true;
+    private bool isMapActive = false;
 
     private void Start() {
         path = new NavMeshPath();
         line = transform.GetComponent<LineRenderer>();
         line.enabled = lineToggle;
-        indicator = GameObject.Find("Indicator");
-
-        if (indicator != null)
-        {
-            DontDestroyOnLoad(indicator);
-        }
-        else
-        {
-            Debug.LogError("Объект indicator не найден");
-        }   
+        arCamera.gameObject.SetActive(isArActive);
+        topCamera.gameObject.SetActive(isMapActive);
     }
 
     private void Update() {
@@ -63,9 +59,6 @@ public class SetNavigationTarget3 : MonoBehaviour {
 
     public void Floor(int selectedValue) {
         string selectedText = SelectFloor.options[selectedValue].text;
-        if (selectedText != "Floor3") {
-            Destroy(indicator);
-        }
         if (selectedText == "Floor1") {
             scene.OpenFloor1();
         }
@@ -80,7 +73,10 @@ public class SetNavigationTarget3 : MonoBehaviour {
         }
     }
     public void Map() {
-        scene.OpenMap3();
+        isArActive = !isArActive;   
+        isMapActive = !isMapActive;
+        arCamera.gameObject.SetActive(isArActive);
+        topCamera.gameObject.SetActive(isMapActive);
     }
 
     public void Back() {
