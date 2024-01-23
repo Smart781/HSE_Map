@@ -5,6 +5,7 @@
 		<type fullname="SetNavigationTarget2" preserve="nothing"/>
 		<type fullname="SetNavigationTarget3" preserve="nothing"/>
 		<type fullname="SetNavigationTarget4" preserve="nothing"/>
+		<type fullname="SetNavigationTarget5" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro">
 		<type fullname="TMPro.TextMeshProUGUI" preserve="nothing"/>

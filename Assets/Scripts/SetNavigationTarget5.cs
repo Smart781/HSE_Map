@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using System;
 
-public class SetNavigationTarget3 : MonoBehaviour {
+public class SetNavigationTarget5 : MonoBehaviour {
     [SerializeField]
     private TMP_Dropdown navigationTargetDropDown;
     [SerializeField]
@@ -46,8 +46,8 @@ public class SetNavigationTarget3 : MonoBehaviour {
         string selectedText = navigationTargetDropDown.options[selectedValue].text;
         try {
             int value = Int32.Parse(selectedText);
-            if (value >= 400) {
-                Debug.Log("Перейдите на 4 этаж по лестнице");
+            if (value >= 500) {
+                Debug.Log("Перейдите на 5 этаж по лестнице");
             }
         } catch (FormatException) {
         }
@@ -75,10 +75,12 @@ public class SetNavigationTarget3 : MonoBehaviour {
             scene.OpenFloor5();
         }
     }
+
     public void Map() {
         isArActive = !isArActive;   
         isMapActive = !isMapActive;
         arCamera.gameObject.SetActive(isArActive);
         topCamera.gameObject.SetActive(isMapActive);
     }
+
 }

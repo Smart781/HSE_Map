@@ -46,11 +46,10 @@ public class QrCodeRecenter : MonoBehaviour {
             transformation = XRCpuImage.Transformation.MirrorY
         };
 
-        int size = image.GetPlane(0).data.Length;
+        int size = image.GetConvertedDataSize(conversionParams);
         var buffer = new NativeArray<byte>(size, Allocator.Temp);
 
-        // Используем CopyFrom вместо CopyTo
-        buffer.CopyFrom(image.GetPlane(0).data);
+        image.Convert(conversionParams, buffer);
 
         image.Dispose();
 

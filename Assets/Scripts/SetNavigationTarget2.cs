@@ -71,6 +71,9 @@ public class SetNavigationTarget2 : MonoBehaviour {
         if (selectedText == "Floor4") {
             scene.OpenFloor4();
         }
+        if (selectedText == "Floor5") {
+            scene.OpenFloor5();
+        }
     }
 
     public void Map() {
@@ -78,9 +81,5 @@ public class SetNavigationTarget2 : MonoBehaviour {
         isMapActive = !isMapActive;
         arCamera.gameObject.SetActive(isArActive);
         topCamera.gameObject.SetActive(isMapActive);
-    }
-
-    public void Back() {
-        scene.OpenFloor2();
     }
 }
