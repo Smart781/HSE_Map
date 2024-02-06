@@ -53,6 +53,7 @@
     <Analyzer Include="/home/smart78/.vscode/extensions/visualstudiotoolsforunity.vstuc-0.9.4/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/SetNavigationTarget6.cs" />
     <Compile Include="Assets/Scripts/SetNavigationTarget.cs" />
     <Compile Include="Assets/Scripts/SetNavigationTarget2.cs" />
     <Compile Include="Assets/Scripts/SetNavigationTarget4.cs" />
