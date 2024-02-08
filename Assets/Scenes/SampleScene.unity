@@ -3124,6 +3124,14 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Floor5
       m_Image: {fileID: 0}
+    - m_Text: 1000+
+      m_Image: {fileID: 0}
+    - m_Text: 2000+
+      m_Image: {fileID: 0}
+    - m_Text: 3000+
+      m_Image: {fileID: 0}
+    - m_Text: 4000+
+      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:

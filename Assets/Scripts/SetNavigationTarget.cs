@@ -74,6 +74,18 @@ public class SetNavigationTarget : MonoBehaviour {
         if (selectedText == "Floor5") {
             scene.OpenFloor5();
         }
+        if (selectedText == "1000+") {
+            scene.OpenMap1();
+        }
+        if (selectedText == "2000+") {
+            scene.OpenMap2();
+        }
+        if (selectedText == "3000+") {
+            scene.OpenMap3();
+        }
+        if (selectedText == "4000+") {
+            scene.OpenMap4();
+        }
     }
 
     public void Map() {
